@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Hey there! Checking out my HTML code, eh?
+
+No problemo, I suspect if you are looking this deep
+you know much more than me. Feel free to drop me
+a few suggestions on how to improve. HTML is not my
+main deal, but mostly a side interest:
+ensmingeraa@gmail.com
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="engineer, golden, co, IoT, Alex, Ensminger, University of Miami, Java, Thingworx, portfolio">
+	<meta name="description" content="Alex Ensminger - Portfolio">
+	<meta name="author" content="Alex Austin Ensminger">
+
+	<title>Alex Ensminger</title>
+
+    <!-- Font awesome -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet' type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+<!--My own CSS -->
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="wrapper">
+    
+    <!-- Hero Type Header -->
+      <div id= "header" class = "header">
+      </div>
+
+      <!-- Actual Page Content -->
+        <div id = "content">
+        </div>
+
+        <!--Footer-->
+        <footer id ="footer" class="footer">
+            <div class = "icons">
+              <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/alex-ensminger-627b8726" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/ensmingeraa" target="_blank">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x icon"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                <a href="https://github.com/aensminger" target="_blank">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+
+              </ul>
+            </div>
+
+            <div class = "copyright">
+              <p>2017</p>
+            </div>
+        </footer>
+  </div>
+
+  <div id="camIcon" class="fa fa-camera camIcon" onclick="popupModal()">
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <div id = "nav-bar">
+    <!-- Full Menu -->
+        <div class="menu">
+          <ul>
+          <li> <button  id="PROJECTS" onclick="selectPage(this)">PROJECTS</button></li>
+          <li> <button  id="CV" onclick="selectPage(this)">CV</button></li>
+          <li> <button  id="CONTACT" onclick="selectPage(this)">CONTACT</button></li>
+          </ul>
+        </div>
+
+    <!--initials in octagon -->
+        <button id= "logo" onclick='selectPage(this)'>
+            <svg id="octagon" class="octagon" viewBox="-2 0 50 50"  width="100%" height="100%">
+              <g transform="scale(0.13)">
+                <polygon  points="300,150 225,280 75,280 0,150 75,20 225,20" stroke-width="15" fill="transparent" />
+              </g>
+            </svg>
+            <p id="initials" class="initials">aE</p>
+        </button>
+
+    <!-- Hamburger Menu Icon -->
+    <div id="burger" onclick="slideMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-- Modal Popup -->
+      <div id="camPop" class="modal">
+        <div class = "modal-content">
+          <span class="close">&times;</span>
+          <p>
+            When I'm not behind a keyboard, I like to be mucking around outdoors.
+            So, I've sprinkled some of my pictures through here, just to keep things from being too boring!
+          </p>
+          <br/>
+          <div id= "image-caption">
+          </div>
+        </div>
+      </div>
+
+
+  <!-- jQuery -->
+     <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- My JavaScript -->
+      <script src="js/alexEnsminger.js"></script>
+
+
+</body>
+</html>

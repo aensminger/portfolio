@@ -1,0 +1,310 @@
+/*
+This serves as the layout and positioning guide
+Last Update: May 2017
+*/
+
+/*
+ALl Window Size Styling
+*/
+html, body {
+  height: 100%;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+p {
+  padding:0;
+  margin:0;
+}
+
+#wrapper {
+  margin:0;
+  min-height: 100%;
+  padding:0;
+  position: relative;
+}
+
+#nav-bar {
+  padding-top:20px;
+  position:absolute;
+  top:0px;
+  width:100%;
+}
+
+.header {
+  background: no-repeat center center;
+  background-attachment: scroll;
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover%;
+
+  width:100%;
+  height:365px;
+}
+.page-title {
+  height:200px;
+  position: relative;
+  top:90px;
+  width:100%;
+}
+.page-title h1 {
+  position:absolute;
+  margin-left: 10%;
+  width:80%;
+  bottom:0px;
+}
+.page-title hr {
+  max-width:500px;
+  width: 100%;
+}
+.camIcon {
+  position: absolute;
+  top: 340px;
+  right:3%;
+}
+
+#content {
+  width:100%;
+  padding-bottom: 130px;
+}
+.content {
+
+    padding: 20px 30px 20px 20px;
+    margin:auto;
+}
+
+.author-line {
+  width:100%;
+}
+
+.subsection {
+  width:100%;
+}
+.subsection_alternate {
+  padding: 20px 0px;
+  width:100%;
+}
+.imageRow {
+  margin:auto;
+  max-width:800px;
+  text-align: center;
+}
+img.imageBox {
+  display:inline-block;
+  padding: 15px;
+  width:350px;
+  height:300px;
+  margin:auto;
+}
+
+img.imageBoxSingle {
+  display:inline-block;
+  padding: 15px;
+  width:80%;
+  height:auto;
+  max-width:600px;
+  margin:auto;
+}
+
+#footer {
+  position: absolute;
+  bottom:10px;
+  height:100px;
+  width:100%;
+  background-color: white;
+}
+
+.footer ul {
+  list-style: none;
+  list-style-type: none;
+  margin-top: 5px;
+  padding:0px;
+
+}
+.footer li {
+  display: inline-block;
+  padding:10px;
+}
+
+/*
+Modal Popup Stuff
+https://www.w3schools.com/howto/howto_css_modals.asp
+*/
+.modal {
+  position: absolute;
+  top:0px;
+  display: none; /* Hidden by default */
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+}
+.modal-content {
+  /* Modal Content/Box */
+  margin: 200px auto;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+}
+.close {
+  /* The Close Button on the popup */
+  float: right;
+  padding-right:10px;
+}
+.modal-content p {
+  padding: 30px 20px 20px 20px;
+}
+#image-caption {
+  padding: 10px 0px 5px 0px;
+}
+#image-caption p {
+  padding-right: 20px;
+}
+
+
+/*
+Menu Specifics
+*/
+#burger {
+  float: right;
+  padding-right:3%;
+  vertical-align: middle;
+  position: sticky;
+  padding-top: 12px;
+}
+/*
+Hamburger Menu with animation
+//inspired by w3schools menu
+*/
+.bar1, .bar2, .bar3 {
+  position: relative;
+  margin: 4px 0;
+  height: 3px;
+}
+.bar1, .bar3 {
+  width: 22px;
+}
+.bar2 {
+  left: 5px;
+  width: 17px;
+  align-content:right;
+
+}
+
+
+/*
+Large Screens Menu Top Left
+*/
+@media only screen and (min-width: 1024px) {
+  #burger {
+    display : none;
+  }
+  .menu {
+    float:right;
+    position: relative;
+    display : block !important;
+    width:50%;
+  }
+  .menu ul {
+    float: right;
+    margin-right:6%
+  }
+  .menu li, button {
+    margin-right: 10px;
+    display:inline-block;
+    text-align:center;
+  }
+  .content {
+      max-width:800px;
+  }
+}
+
+/*
+Dropdown Menu for smaller devices
+Inspired By:
+https://codepen.io/g13nn/pen/eHGEF
+*/
+
+@media only screen and (max-width: 1024px) {
+
+  .menu{
+    position: absolute;
+    display: none; /*Start with retracted*/
+    margin:0;
+    padding:0;
+    top:0px;
+    width:100%;
+  }
+  .menu ul {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+  }
+  .menu li {
+    display: block;
+    padding:5px 0 15px 0;
+  }
+  .menu li:hover {
+    display: block;
+    padding:5px 0 15px 0;
+  }
+  .content {
+      max-width:600px;
+  }
+}
+
+/*
+Tiny Screen iPhone
+*/
+@media only screen and (max-width: 450px) {
+  img.imageBox {
+    display:inline-block;
+    padding: 15px;
+    width:250px;
+    height:200px;
+    margin:auto;
+  }
+}
+/*
+logo
+adapted from
+http://codepen.io/gwoo/pen/ozKEb
+*/
+
+#logo {
+  position: relative;
+  left:5%;
+  width:70px;
+  height: 70px;
+  padding:0px;
+  margin:0px;
+  border:none;
+  outline: none;
+  overflow:visible;
+  overflow-x: visible;
+}
+
+#octagon {
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height:100%;
+  display: inline;
+  float:left;
+
+  overflow:visible;
+  overflow-x: visible;
+}
+
+#initials {
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding-top:5px;
+  width:60px;
+  margin:0px;
+}
