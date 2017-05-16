@@ -75,8 +75,8 @@ function selectPage(element) {
          window.location.hash = '#home';
          break;
       }
-      case "PROJECTS" : {
-         window.location.hash = '#projects';
+      case "WORK" : {
+         window.location.hash = '#work';
          break;
       }
       case "CV" : {
@@ -114,7 +114,7 @@ function navigate(hashString) {
       }
 
   switch (hashString) {
-    case "#projects" : {
+    case "#work" : {
       $("#content").load('projects.html #content-projects');
       $("#header").load('projects.html #header-projects')
       $("#image-caption").load('projects.html #caption-projects');
