@@ -17,6 +17,11 @@ p {
   margin:0;
 }
 
+h2 {
+  margin:0 !important;
+  padding:20px 0px; !important;
+}
+
 #wrapper {
   margin:0;
   min-height: 100%;
@@ -74,6 +79,27 @@ p {
     padding: 20px 30px 20px 20px;
     margin:auto;
 }
+/*
+TagCloud styling
+http://codepen.io/wbeeftink/pen/dIaDH
+*/
+.tagCloud {
+  list-style: none;
+  margin: 10px 0px;
+  overflow: hidden;
+  padding: 0;
+}
+.tags li {
+  float: left;
+}
+.tag {
+  display: inline-block;
+  height: 22px;
+
+  margin: 0 10px 10px 0;
+  padding: 0 20px 0 23px;
+  position: relative;
+}
 
 .author-line {
   width:100%;
@@ -83,7 +109,6 @@ p {
   width:100%;
 }
 .subsection_alternate {
-  padding: 20px 0px;
   width:100%;
 }
 .imageRow {

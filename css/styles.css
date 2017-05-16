@@ -77,23 +77,52 @@ Bar Animations
 }
 .content {
   color:#4f4a4a;
-  letter-spacing:.34px;
   font-family: Georgia,Times,"Times New Roman",serif;
   font-size:17px;
   font-size:1.0625rem;
+  letter-spacing:.34px;
   line-height:30px
 }
+
+/*
+TagCloud styling
+http://codepen.io/wbeeftink/pen/dIaDH
+*/
+.tags {
+  list-style: none;
+}
+.tag {
+  background-color: rgb(228, 228, 228);
+  border-radius: 3px 0 0 3px;
+  color: #4f4a4a;
+  font-family: 'Work Sans';
+  font-size:12px;
+  line-height: 22px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+.tag:hover {
+  background-color: #4f4a4a;
+  color: white;
+  cursor: default;
+}
+
+.tag-alternate {
+  background-color: white;
+}
+
 .author-line {
   font-family: 'Work Sans';
   font-size:14px;
 }
 .subsection h2 {
+  color:#4f4a4a;
   font-family: 'Work Sans';
   font-size:22px;
   text-align: center;
-  color:#4f4a4a;
 }
 .subsection_alternate h2 {
+  background-color:  rgb(228, 228, 228);
   text-align: center;
 }
 .subsection_alternate {
